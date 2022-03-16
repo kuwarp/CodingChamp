@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+
+body{
+  /* display:block; */
+    
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background:#111111;
+}
+.wrapper{
+ 
+    margin-left: 15%;
+    margin-top: 20%;
+    margin-bottom: 25%;
+    display: inline-flex;
+    /* top: 20%; */
+  }
+
+  .btun{
+      margin-left: 60%;
+    padding: .25rem .5rem ;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+    
+  }
+  
+
+   .wrapper .static-text{
+    font-size: 60px;
+     color:#fff;
+    font-weight: 400;
+    }
+
+  .wrapper .dynamic-content{
+ 
+    margin-left:20px;
+ height: 80px;
+ line-height: 90px;
+/* overflow: hidden; */
+   }
+  
+   .dynamic-content  li{
+    color: #dfcb3a;
+    list-style: none;
+    font-size: 85px;
+    font-weight: 500;
+    animation: typing 5s steps(16) infinite;
+   }
+    @keyframes typing{
+        100%{
+            left: 100%;
+            margin: 0 -35px 0 30px;
+        }
+    }
+  
+  
+  .dynamic-content li span{
+    position: relative;
+  }
+  .dynamic-content li span::after{
+      content: "";
+      position: absolute;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: #111111;
+      border-left: 2px solid #dfcb3a ;
+      animation: typing 4s steps(14) infinite;
+  }
+
+  
+
+
+
+  @media screen and (max-width:700px) {
+      .wrapper{
+          display: none;
+      }
+      
+  }

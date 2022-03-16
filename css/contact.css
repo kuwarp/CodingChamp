@@ -1,0 +1,75 @@
+
+:root{
+    --main-color:#d3ad7f;
+    --black:#13131a;
+    --bg:#08080e;
+    --border:.1rem solid rgba(20, 20, 20, 0.3);
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: rgb(248, 248, 248);
+    border-radius: 5rem;
+}
+
+.contact .row{
+    display: flex;
+    background:rgb(219, 128, 128);
+    flex-wrap: wrap;
+    gap:1rem;
+}
+
+.contact .row .map{
+    flex:1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact .row form{
+    flex:1 1 45rem;
+    padding:5rem 2rem;
+    text-align: center;
+}
+
+.contact .row form h3{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color:rgb(20, 19, 19);
+}
+
+.contact .row form .inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background:var(--bg);
+    background-color: bisque;
+    border:var(--border);
+}
+
+.contact .row form .inputBox span{
+    color:rgb(10, 10, 10);
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.contact .row form .inputBox input{
+    width: 100%;
+    padding:2rem;
+    font-size: 1.7rem;
+    color:rgb(29, 27, 27);
+    text-transform: none;
+    background:none;
+}
+.contact .row form  .btn{
+    border-radius: 2rem;
+    border-color:#0a0a0a;
+}
+
