@@ -9,6 +9,11 @@
 		$ORDER_ID = $_POST["ORDER_ID"];
 	}
 
+  $ORDER_DATE = "";
+	
+	if (isset($_POST["ORDER_DATE"]) && $_POST["ORDER_DATE"] != "") {
+		$ORDER_DATE = $_POST["ORDER_DATE"];
+	}
 ?>  
    <div class="container-fluid bg-dark"> <!-- Start Course Page Banner -->
      <div class="row">
@@ -21,7 +26,7 @@
      <div class="form-group row">
         <label class="offset-sm-3 col-form-label text-white">Order ID: </label>
         <div>
-          <input class="form-control mx-3" id="ORDER_ID" tabindex="1" maxlength="20" size="20" name="ORDER_ID" autocomplete="off" value="<?php echo $ORDER_ID ?>">
+          <input class="form-control mx-3 text-black" id="ORDER_ID" tabindex="1" maxlength="20" size="20" name="ORDER_ID" autocomplete="off" value="<?php echo $ORDER_ID ?>">
         </div>
         <div>
           <input class="btn btn-primary mx-4" value="View" type="submit"	onclick="">
@@ -42,11 +47,13 @@
                 <h2 class="text-center ">Payment Receipt</h2>
                 <table class="table table-bordered">
                   <tbody>
-                      <tr >
+                      <tr class='text-white' >
                         <td><label>Order ID</label></td>
                         <td><?php if (isset($row["order_id"])) echo $row["order_id"] ?></td>
+                        
                       </tr>
-                      <tr >
+                     
+                      <tr class='text-white' >
                         <td><label>Status</label></td>
                         <td>Success</td>
                       </tr>
@@ -61,12 +68,15 @@
       <?php
       } } } ?>
 
+
+         
+
+
+
+
     </div>  
 <div class="mt-5">
-<?php 
-  // Contact Us
-  include('./contact.php'); 
-?> 
+
 </div>
 
 <?php 

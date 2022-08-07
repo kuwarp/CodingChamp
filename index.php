@@ -11,8 +11,8 @@
     <div class="container-fluid remove-vid-marg">
    
       <div class="vid-parent">
-        <video playsinline autoplay muted loop>
-          <!-- <source src="video/p.mp4" /> -->
+      <video playsinline autoplay muted loop>
+         
         </video>
       
        
@@ -37,7 +37,7 @@
     </div> <!-- End Text Banner -->
     
     <div class="container mt-5"> <!-- Start Most Popular Course -->
-      <h1 class="text-center text-white text-md ">Popular Course</h1>
+      <h1 class="text-center text-white text-md ">TRENDS IN TECHNOLOGY</h1>
       <div class="card-deck mt-4"> <!-- Start Most Popular Course 1st Card Deck -->
         <?php
         $sql = "SELECT * FROM course LIMIT 3";
@@ -145,30 +145,7 @@
         </div>
     </div> <!-- End Social Follow -->
 
-    <!-- Start About Section -->
-    <!-- <div class="container-fluid p-4" style="background-color:#E9ECEF">
-      <div class="container" style="background-color:#E9ECEF">
-        <div class="row text-center">
-          <div class="col-sm">
-            <h5>About Us</h5>
-              <p>codingChamp a platform which  provides universal access to the world’s best education, partnering with top Tutors and organizations to offer courses online.</p>
-          </div>
-          <div class="col-sm">
-            <h5>Category</h5>
-            <a class="text-dark" href="#">Web Development</a><br />
-            <a class="text-dark" href="#">Web Designing</a><br />
-            <a class="text-dark" href="#">Android App Dev</a><br />
-            <a class="text-dark" href="#">iOS Development</a><br />
-            <a class="text-dark" href="#">Data Analysis</a><br />
-          </div>
-          <div class="col-sm">
-            <h5>Contact Us</h5>
-            <p>iSchool Pvt Ltd <br> Near Police Camp II <br> Bokaro, Jharkhand <br> Ph. 000000000 </p>
-          </div>
-        </div>
-      </div>
-    </div> -->
-     <!-- End About Section -->
+   
 
   <?php 
     // Footer Include from mainInclude 
